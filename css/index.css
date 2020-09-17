@@ -42,21 +42,17 @@ img {
 #isshow img{
     width: 100%;
 }
-.btn{
-    color: white;
-    background: cornflowerblue;
-    font-size: 0.5rem;
-    width: 42%;
-    text-align: center;
-    border-radius: 6%;
-    border: 1px;
-    border: 1px dashed white;
-    position: absolute;
-    bottom: 2%;
-    height: 4%;
-    left: 29%;
+#isshow .btn{
+    width: 0.6rem;
+    height: 0.6rem;
+    /*margin-top: 14%;*/
 }
-#head{
+#isshow .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head{
     height: 5%;
     width: 96%;
     font-size: 0.5rem;
@@ -78,4 +74,33 @@ a{
     text-decoration: none;
     color: #B8C7CE;
     font-size: 0.2rem;
+}
+.content{
+    width: 100%;
+    margin-top: 14%;
+}
+@media screen and (min-width:1000px) {
+    .head{
+        height: 5%;
+        width: 100%;
+        font-size: 0.5rem;
+        background: #212E31;
+        color: #B8C7CE;
+        padding: 0.2rem;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+    }
+    #tel{
+        margin-right: 30px;
+    }
+    .content{
+        margin-top: 6%;
+    }
+   #isshow .right{
+        margin-right: 90px;
+    }
 }
